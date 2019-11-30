@@ -6,8 +6,11 @@ class MyUserApp(GuiApp):
 
     def once(self):
         # Set things up here to run once
-        self.change_title('Blink All Lights - Version 2')
+        self.change_title('Blink All Lights - Version 3')
         self.change_message('By Eric')
+
+        self.set_light_color(self.ALL_LIGHTS[1], 'on')
+        self.set_light_color(self.ALL_LIGHTS[3], 'on')
 
     def loop(self):
         # Set things up here to run repeatedly
