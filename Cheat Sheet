@@ -1,0 +1,15 @@
+The exercise must provide these functions:
+once(self)  # Code that runs once when the program starts
+
+loop(self)  # Code the runs repeatedly (every second)
+
+The exercise may use these functions:
+change_title(self, new_title, new_color)  # new_color is optional, default is black
+change_message(self, new_message, new color)  # new color is optional
+
+change_picture(self)  # flip the picture between "sun" and "moon"
+
+get_light_color(self, light)  # "light" is the name of the light
+set_light_color(self, light, state)  # state is "on" or "off"
+
+pb_clicked(self, number)  # "number" will be set to the number of the button clicked

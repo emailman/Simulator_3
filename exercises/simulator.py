@@ -32,8 +32,8 @@ class GuiApp(ABC):
 
         guizero.Text(self.app, size=8)
 
-        self.txt_header = guizero.Text(self.app, size=20,
-                                       text='Your Header Here')
+        self.txt_title = guizero.Text(self.app, size=20,
+                                      text='Your Header Here')
         guizero.Text(self.app, size=8)
 
         self.txt_message = guizero.Text(self.app, size=18,
@@ -104,9 +104,9 @@ class GuiApp(ABC):
     def pb_clicked(self, number):
         pass
 
-    def change_title(self, new_header, color='black'):
-        self.txt_header.value = new_header
-        self.txt_header.text_color = color
+    def change_title(self, new_title, color='black'):
+        self.txt_title.value = new_title
+        self.txt_title.text_color = color
 
     def change_message(self, new_message, color='black'):
         self.txt_message.value = new_message
