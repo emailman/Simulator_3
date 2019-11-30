@@ -33,7 +33,7 @@ class GuiApp(ABC):
         guizero.Text(self.app, size=8)
 
         self.txt_title = guizero.Text(self.app, size=20,
-                                      text='Your Header Here')
+                                      text='Your Title Here')
         guizero.Text(self.app, size=8)
 
         self.txt_message = guizero.Text(self.app, size=18,
