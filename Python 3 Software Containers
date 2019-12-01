@@ -1,0 +1,33 @@
+
+Python 3 Software Containers
+
+The first line of all containers end with ":" and
+use indentation to show the content of the container.
+
+Class-
+keyword: class
+holds: global variables, functions, inner classes
+
+Function-
+keyword: def
+holds: local variables, executable code, inner functions
+
+One-way logical test:
+keyword: if
+holds: local variables, executable code, nested tests and loops
+
+Two-way logical test:
+keywords: if .. else
+holds: local variables, executable code, nested tests and loops
+
+Multi-way logical test:
+keywords: if .. elif .. elif .. else
+holds: local variables, executable code, nested tests and loops
+
+Conditional loop:
+keyword: while
+holds: local variables, executable code, nested tests and loops
+
+Iterative loop:
+keywords: for .. in ..
+holds: local variables, executable code, nested tests and loops
