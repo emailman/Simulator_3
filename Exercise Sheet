@@ -1,0 +1,26 @@
+
+Simulator Exercise Sheet
+
+Exercise 0: A program you can copy to get started
+
+Exercise 1: Change the title and the message to "Hello World" and your name
+
+Exercise 2a: Flip the picture from "sun" to "moon" every second
+
+Exercise 2b: Turn the red light on and off every second
+
+Exercise 3a: Turn all the lights on and off every second
+
+Exercise 3b: Turn all the lights on and off using a list of lights
+
+Exercise 3c: Turn the lights on and off in an alternating pattern
+
+Exercise 4: Off to Mars - build a simulation of a three-stage rocket
+
+Exercise 5a: Change the message to say which button was pressed
+
+Exercise 5b: Light the corresponding light when a button is pressed
+
+Exercise 5c: Alternately turn on and off the red light when button 1 is pressed
+
+Exercise 5d: Alternative turn on and off each light when the respective button is pressed
