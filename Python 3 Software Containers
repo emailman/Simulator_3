@@ -31,4 +31,3 @@ holds: local variables, executable code, nested tests and loops
 Iterative loop:
 keywords: for .. in ..
 holds: local variables, executable code, nested tests and loops
-
