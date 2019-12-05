@@ -1,8 +1,8 @@
 
 Python 3 Software Containers
 
-The first line of all containers end with ":" and
-use indentation to show the content of the container.
+The first line of all containers ends with ":".
+Indentation is used to show the contents of a container.
 
 Class-
 keyword: class

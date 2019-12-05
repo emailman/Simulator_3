@@ -4,7 +4,7 @@ Simulator Cheat Sheet
 Your exercise must provide these functions:
 once(self)  # Code that runs once when the program starts
 
-loop(self)  # Code the runs repeatedly (every second)
+loop(self)  # Code that runs repeatedly (every second)
 
 Your exercise may use these functions:
 self.change_title(new_title, new_color)  # new_color is optional, default is black
