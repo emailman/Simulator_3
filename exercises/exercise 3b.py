@@ -11,7 +11,6 @@ class MyUserApp(GuiApp):
 
     def loop(self):
         # Set things up here to run repeatedly
-
         for light in self.ALL_LIGHTS:
             light_state = self.get_light_state(light)
             if light_state == 'on':
