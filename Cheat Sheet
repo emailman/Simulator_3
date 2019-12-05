@@ -13,7 +13,7 @@ self.change_message(new_message, new color)  # new color is optional
 self.change_picture()  # flip the picture between "sun" and "moon"
 
 The names of the lights are "red", "yellow", "green", "blue"
-self.get_light_color(light)  # "light" is the name of the light
-self.set_light_color(light, state)  # state is "on" or "off"
+self.get_light_state(light)  # "light" is the name of the light
+self.set_light_state(light, state)  # state is "on" or "off"
 
 self.pb_clicked(number)  # "number" will be set to the number of the button clicked

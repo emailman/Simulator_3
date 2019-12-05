@@ -17,31 +17,31 @@ class MyUserApp(GuiApp):
             self.change_message('T: -{:3d}'.format(abs(self.counter)))
         else:
             self.change_message('LIFTOFF')
-            self.set_light_color('red', 'on')
+            self.set_light_state('red', 'on')
 
         if self.counter == 10:
             self.change_message('First Stage Cutoff')
-            self.set_light_color('red', 'off')
+            self.set_light_state('red', 'off')
 
         elif self.counter == 11:
             self.change_message('Second Stage Ignition')
-            self.set_light_color('yellow', 'on')
+            self.set_light_state('yellow', 'on')
 
         elif self.counter == 20:
             self.change_message('Second Stage Cutoff')
-            self.set_light_color('yellow', 'off')
+            self.set_light_state('yellow', 'off')
 
         elif self.counter == 21:
             self.change_message('Third Stage Ignition')
-            self.set_light_color('green', 'on')
+            self.set_light_state('green', 'on')
 
         elif self.counter == 30:
             self.change_message('Third Stage Cutoff')
-            self.set_light_color('green', 'off')
+            self.set_light_state('green', 'off')
 
         elif self.counter == 31:
             self.change_title('On the Way to Mars')
-            self.set_light_color('blue', 'on')
+            self.set_light_state('blue', 'on')
 
         self.counter += 1
 

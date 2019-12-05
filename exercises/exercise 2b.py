@@ -10,11 +10,11 @@ class MyUserApp(GuiApp):
 
     def loop(self):
         # Set things up here to run repeatedly
-        light_color = self.get_light_color('red')
-        if light_color == 'red':
-            self.set_light_color('red', 'off')
+        light_state = self.get_light_state('red')
+        if light_state == 'on':
+            self.set_light_state('red', 'off')
         else:
-            self.set_light_color('red', 'on')
+            self.set_light_state('red', 'on')
 
 
 # Start the simulator

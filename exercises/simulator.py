@@ -120,7 +120,7 @@ class GuiApp(ABC):
             self.pb_picture.image = './pictures/sun.png'
             self.picture_toggle = True
 
-    def set_light_color(self, light, state):
+    def set_light_state(self, light, state):
         if light in self.LIGHTS:
             if state == 'on':
                 self.waf_lights[self.LIGHTS[light]].color = light
@@ -133,9 +133,12 @@ class GuiApp(ABC):
             guizero.error(title='Simulator Error',
                           text='Invalid Light-' + light)
 
-    def get_light_color(self, light):
+    def get_light_state(self, light):
         if light in self.LIGHTS:
-            return self.waf_lights[self.LIGHTS[light]].color
+            if self.waf_lights[self.LIGHTS[light]].color == light:
+                return 'on'
+            else:
+                return 'off'
 
         else:
             guizero.error(title='Simulator Error', text='Invalid Light-' + light)
