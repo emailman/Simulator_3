@@ -90,8 +90,15 @@ class GuiApp(ABC):
         self.pb_picture = guizero.PushButton(box_misc, image='./pictures/sun.png',
                                              height=90, width=90,
                                              command=self.change_picture)
-        guizero.Box(box_misc, height=100, width=100)
+        guizero.Box(box_misc, height=75, width=75)
+
+        guizero.Text(box_misc, text='Type here:')
+        self.tbx_entry = guizero.TextBox(box_misc, width=16)
+        guizero.Box(box_misc, height=75, width=75)
+
         guizero.PushButton(box_misc, text='QUIT', command=quit)
+
+
 
     @abstractmethod
     def once(self):
