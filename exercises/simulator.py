@@ -151,6 +151,9 @@ class GuiApp(ABC):
             guizero.error(title='Simulator Error', text='Invalid Light-' + light)
             return None
 
+    def get_text_entry(self):
+        return self.tbx_entry.value
+
     def run(self):
         self.once()
 
