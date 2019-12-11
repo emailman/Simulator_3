@@ -18,7 +18,7 @@ Exercise 3b: Turn all the lights on and off using a list of lights
 
 Exercise 3c: Turn the lights on and off in an alternating pattern
 
-Exercise 4: Off to Mars - build a simulation of a three-stage rocket
+Exercise 4: Off to Mars - Build a simulation of a three-stage rocket
 
 Exercise 5a: Change the message to say which button was pressed
 
@@ -26,7 +26,7 @@ Exercise 5b: Light the corresponding light when a button is pressed
 
 Exercise 5c: Alternative turn on and off each light when the respective button is pressed
 
-Exercise 6: Turn on the yellow light if the picture is the "sun".
+Exercise 6: Turn on the yellow light if the picture is the "sun"
                 Turn on the blue light if the picture is the "moon"
 
 Exercise 7a: Show the values of all the sliders in the message
@@ -35,6 +35,8 @@ Exercise 7b: Use slider 1 to represent temperature (0-100).
                 If the temperature is between 0-32, light the blue light (cold)
                 If the temperature is between 32-75, light the yellow light (warm)
                 If the temperature is between 75-100, light the red light (hot)
+
+Exercise 7c: Use the three sliders as mixers to set the color of the circle
 
 
 

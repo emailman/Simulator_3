@@ -82,8 +82,8 @@ class GuiApp(ABC):
         box_misc = guizero.Box(self.app, border=1, align='left',
                                width=200, height=self.HEIGHT - 150)
 
-        guizero.Waffle(box_misc, height=1, width=1, dim=100,
-                       dotty=True, color='black', pad=50)
+        self.circle = guizero.Waffle(box_misc, height=1, width=1, dim=100,
+                                     dotty=True, color='black', pad=50)
 
         self.pb_picture = guizero.PushButton(box_misc, image='./pictures/sun.png',
                                              height=90, width=90,
@@ -158,6 +158,9 @@ class GuiApp(ABC):
         for slider in self.sld_list:
             slider_values.append(slider.value)
         return slider_values
+
+    def set_circle_color(self, red, green, blue):
+        self.circle.set_pixel(0, 0, (red, green, blue))
 
     def run(self):
         self.once()
