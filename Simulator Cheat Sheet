@@ -20,3 +20,5 @@ self.get_light_state(light)  # "light" is the name of the light
 self.set_light_state(light, state)  # state is "on" or "off"
 
 self.pb_clicked(number)  # "number" will be set to the number of the button clicked
+
+self.get_slider_values()  # returns a list of the currents value of all the sliders

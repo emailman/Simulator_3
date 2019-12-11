@@ -20,6 +20,7 @@ class GuiApp(ABC):
     # Global variables
     # light_on = [True] * NUMBER_OF_LIGHTS
     picture_state = 'sun'
+    sld_list = []
 
     def __init__(self):
         super().__init__()
@@ -66,18 +67,16 @@ class GuiApp(ABC):
         # Build and populate a box for the sliders
         box_sliders = guizero.Box(self.app, border=1, align='left',
                                   width=300, height=self.HEIGHT - 150)
-        sld_list = []
+
         for i in range(self.NUMBER_OF_SLIDERS):
-            sld_list.append(guizero.Slider(box_sliders, height='fill', width=10,
-                                           start=self.SLIDER_MAX,
-                                           end=self.SLIDER_MIN,
-                                           horizontal=False, align='left',
-                                           command=None))
+            self.sld_list.append(guizero.Slider(box_sliders, height='fill', width=10,
+                                                start=self.SLIDER_MAX, end=self.SLIDER_MIN,
+                                                horizontal=False, align='left', command=None))
             guizero.Text(box_sliders, text='S\nl\ni\nd\ne\nr\n\n' + str(i + 1),
                          width=2, align='left')
 
         for i in range(self.NUMBER_OF_SLIDERS):
-            sld_list[i].text_color = self.SLIDER_COLORS[i]
+            self.sld_list[i].text_color = self.SLIDER_COLORS[i]
 
         # Build and populate a box for misc widgets
         box_misc = guizero.Box(self.app, border=1, align='left',
@@ -153,6 +152,12 @@ class GuiApp(ABC):
 
     def get_text_entry(self):
         return self.tbx_entry.value
+
+    def get_slider_values(self):
+        slider_values = []
+        for slider in self.sld_list:
+            slider_values.append(slider.value)
+        return slider_values
 
     def run(self):
         self.once()
