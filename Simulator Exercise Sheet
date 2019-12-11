@@ -25,3 +25,6 @@ Exercise 5a: Change the message to say which button was pressed
 Exercise 5b: Light the corresponding light when a button is pressed
 
 Exercise 5c: Alternative turn on and off each light when the respective button is pressed
+
+Exercise 6: Turn on the yellow light if the picture is the "sun".
+                Turn on the blue light if the picture is the "moon"

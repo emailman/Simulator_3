@@ -10,7 +10,7 @@ class MyUserApp(GuiApp):
 
     def loop(self):
         # Set things up here to run repeatedly
-        self.change_picture()
+        self.change_picture_state()
 
 
 # Start the simulator

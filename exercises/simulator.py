@@ -18,9 +18,8 @@ class GuiApp(ABC):
     LOOP_DELAY = 1000  # milliseconds
 
     # Global variables
-    # lights_on = True
     # light_on = [True] * NUMBER_OF_LIGHTS
-    picture_toggle = True
+    picture_state = 'sun'
 
     def __init__(self):
         super().__init__()
@@ -89,7 +88,7 @@ class GuiApp(ABC):
 
         self.pb_picture = guizero.PushButton(box_misc, image='./pictures/sun.png',
                                              height=90, width=90,
-                                             command=self.change_picture)
+                                             command=self.change_picture_state)
         guizero.Box(box_misc, height=75, width=75)
 
         guizero.Text(box_misc, text='Type here:')
@@ -97,8 +96,6 @@ class GuiApp(ABC):
         guizero.Box(box_misc, height=75, width=75)
 
         guizero.PushButton(box_misc, text='QUIT', command=quit)
-
-
 
     @abstractmethod
     def once(self):
@@ -119,13 +116,16 @@ class GuiApp(ABC):
         self.txt_message.value = new_message
         self.txt_message.text_color = color
 
-    def change_picture(self):
-        if self.picture_toggle:
+    def change_picture_state(self):
+        if self.picture_state == 'sun':
             self.pb_picture.image = './pictures/moon.png'
-            self.picture_toggle = False
+            self.picture_state = 'moon'
         else:
             self.pb_picture.image = './pictures/sun.png'
-            self.picture_toggle = True
+            self.picture_state = 'sun'
+
+    def get_picture_state(self):
+        return self.picture_state
 
     def set_light_state(self, light, state):
         if light in self.LIGHTS:
