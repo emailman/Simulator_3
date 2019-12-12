@@ -10,14 +10,14 @@ Your exercise may use these functions:
 self.change_title(new_title, new_color)  # new_color is optional, default is black
 self.change_message(new_message, new color)  # new color is optional
 
-self.get_text_entry():  # Return the text entered in the text box
+self.get_text_entry():  # returns the text entered in the text box
 
 self.change_picture_state()  # flip the picture between "sun" and "moon"
-self.get_picture_state()  # return the string "sun" or "moon"
+self.get_picture_state()  # returns the string "sun" or "moon"
 
 The names of the lights are "red", "yellow", "green", "blue"
-self.get_light_state(light)  # "light" is the name of the light
-self.set_light_state(light, state)  # state is "on" or "off"
+self.get_light_state(light)  # returns the string "on" or "off"
+self.set_light_state(light, state)  # state is set to "on" or "off"
 
 self.pb_clicked(number)  # "number" will be set to the number of the button clicked
 
