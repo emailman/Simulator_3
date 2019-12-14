@@ -5,7 +5,8 @@ class MyUserApp(GuiApp):
 
     def once(self):
         # Set things up here to run once
-        pass
+        self.change_title('Show the value of the sliders in the message')
+        self.change_message('By Eric')
 
     def loop(self):
         # Set things up here to run repeatedly

@@ -6,7 +6,8 @@ class MyUserApp(GuiApp):
 
     def once(self):
         # Set things up here to run once
-        pass
+        self.change_title('Turn on the light corresponding to the button clicked')
+        self.change_message('By Eric')
 
     def loop(self):
         # Set things up here to run repeatedly

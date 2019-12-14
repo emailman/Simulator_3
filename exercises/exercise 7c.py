@@ -5,7 +5,8 @@ class MyUserApp(GuiApp):
 
     def once(self):
         # Set things up here to run once
-        pass
+        self.change_title('Set the color of the circle based on 3 slider values')
+        self.change_message('By Eric')
 
     def loop(self):
         # Set things up here to run repeatedly

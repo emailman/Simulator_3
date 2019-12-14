@@ -5,7 +5,8 @@ class MyUserApp(GuiApp):
 
     def once(self):
         # Set things up here to run once
-        pass
+        self.change_title('Show a light corresponding to a simulated temperature')
+        self.change_message('By Eric')
 
     def loop(self):
         # Set things up here to run repeatedly
