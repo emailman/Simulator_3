@@ -90,7 +90,7 @@ class GuiApp(ABC):
                                              command=self.change_picture_state)
         guizero.Box(box_misc, height=75, width=75)
 
-        guizero.Text(box_misc, text='Type here:')
+        self.txt_prompt = guizero.Text(box_misc, text='Type here:')
         self.tbx_entry = guizero.TextBox(box_misc, width=16)
         guizero.Box(box_misc, height=75, width=75)
 
@@ -114,6 +114,10 @@ class GuiApp(ABC):
     def change_message(self, new_message, color='black'):
         self.txt_message.value = new_message
         self.txt_message.text_color = color
+
+    def change_prompt(self, new_prompt, color='black'):
+        self.txt_prompt.value = new_prompt
+        self.txt_prompt.text_color = color
 
     def change_picture_state(self):
         if self.picture_state == 'sun':
