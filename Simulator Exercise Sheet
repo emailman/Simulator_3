@@ -38,5 +38,8 @@ Exercise 7b: Use slider 1 to represent temperature (0-100).
 
 Exercise 7c: Use the three sliders as mixers to set the color of the circle
 
+Exercise 8a: Prompt for the radius of a circle, press any button when ready,
+                then calculate and show the area in the message field
 
-
+Exercise 8b: Add text entry validation to exercise 8a. Entry must be numeric and
+                greater than or equal to zero
