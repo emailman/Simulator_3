@@ -6,6 +6,7 @@ once(self)  # Code that runs once when the program starts
 
 loop(self)  # Code that runs repeatedly (every second)
 
+
 Your exercise may use these functions in your exercises:
 self.change_title(new_title, new_color)  # new_color is optional, default is black
 self.change_message(new_message, new color)  # new color is optional
@@ -23,3 +24,6 @@ self.set_light_state(light, state)  # state is set to "on" or "off"
 self.pb_clicked(number)  # "number" will be set to the number of the button clicked
 
 self.get_slider_values()  # returns a list of the currents value of all the sliders
+
+self.set_circle_color(red, green, blue):  # set circle to RGB value (0-255)
+self.get_circle_color(): returns the color of the circle in a list of RGB values

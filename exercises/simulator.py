@@ -96,6 +96,7 @@ class GuiApp(ABC):
 
         guizero.PushButton(box_misc, text='QUIT', command=quit)
 
+    # Required user functions
     @abstractmethod
     def once(self):
         pass
@@ -104,6 +105,7 @@ class GuiApp(ABC):
     def loop(self):
         pass
 
+    # Optional user functions
     def pb_clicked(self, number):
         pass
 
@@ -165,6 +167,13 @@ class GuiApp(ABC):
 
     def set_circle_color(self, red, green, blue):
         self.circle.set_pixel(0, 0, (red, green, blue))
+
+    def get_circle_color(self):
+        circle_color = self.circle.get_pixel(0, 0)
+        red = int(circle_color[1:3], 16)
+        green = int(circle_color[3:5], 16)
+        blue = int(circle_color[5:7], 16)
+        return red, green, blue
 
     def run(self):
         self.once()
