@@ -1,13 +1,13 @@
 
 Simulator Cheat Sheet
 
-Your exercise must provide these functions in your exercises:
+You must provide these functions in your exercises:
 once(self)  # Code that runs once when the program starts
 
 loop(self)  # Code that runs repeatedly (every second)
 
 
-Your exercise may use these functions in your exercises:
+You may use these functions in your exercises:
 self.change_title(new_title, new_color)  # new_color is optional, default is black
 self.change_message(new_message, new color)  # new color is optional
 self.change_prompt(new_prompt, new color)  # new color is optional
