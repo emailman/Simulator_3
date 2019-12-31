@@ -10,8 +10,9 @@ class MyUserApp(GuiApp):
 
     def loop(self):
         # Set things up here to run repeatedly
-        sliders = self.get_slider_values()
-        temperature = sliders[0]
+
+        # Red slider simulates temperature
+        temperature = self.get_slider_value('red')
         self.change_message('Temperature = ' + str(temperature))
         if temperature < 50:
             self.set_light_state('blue', 'on')

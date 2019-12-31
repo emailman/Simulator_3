@@ -31,7 +31,7 @@ Exercise 6: Turn on the yellow light if the picture is the "sun"
 
 Exercise 7a: Show the values of all the sliders in the message
 
-Exercise 7b: Use slider 1 to represent temperature (0-100).
+Exercise 7b: Use the red slider to represent temperature (0-100).
                 If the temperature is less than 50 light the blue light (cold)
                 If the temperature is 50 or greater, light the red light (hot)
 

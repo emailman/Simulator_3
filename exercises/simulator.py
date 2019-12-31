@@ -6,7 +6,10 @@ class GuiApp(ABC):
     # Global constants
     WIDTH = 1050
     HEIGHT = 820
+
     LIGHTS = {'red': (0, 0), 'yellow': (0, 1), 'green': (0, 2), 'blue': (0, 3)}
+    SLIDERS = {'red': 0, 'green': 1, 'blue': 2}
+
     COLOR_LIST = list(LIGHTS.keys())
     NUMBER_OF_LIGHTS = NUMBER_OF_BUTTONS = len(LIGHTS)
     DARK_COLOR = 'grey'
@@ -164,6 +167,13 @@ class GuiApp(ABC):
         for slider in self.sld_list:
             slider_values.append(slider.value)
         return slider_values
+
+    def get_slider_value(self, slider):
+        if slider in self.SLIDERS:
+            slider_value = self.sld_list[self.SLIDERS[slider]].value
+            return slider_value
+        else:
+            guizero.error(title='Simulator Error', text='Invalid Slider-' + slider)
 
     def set_circle_color(self, red, green, blue):
         self.circle.set_pixel(0, 0, (red, green, blue))
