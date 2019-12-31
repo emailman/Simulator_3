@@ -8,13 +8,12 @@ class GuiApp(ABC):
     HEIGHT = 820
 
     LIGHTS = {'red': (0, 0), 'yellow': (0, 1), 'green': (0, 2), 'blue': (0, 3)}
-    SLIDERS = {'red': 0, 'green': 1, 'blue': 2}
-
     COLOR_LIST = list(LIGHTS.keys())
     NUMBER_OF_LIGHTS = NUMBER_OF_BUTTONS = len(LIGHTS)
-    DARK_COLOR = 'grey'
-    NUMBER_OF_SLIDERS = 3
-    SLIDER_COLORS = ('red', 'green', 'blue')
+    DARK_LIGHT_COLOR = 'grey'
+
+    SLIDERS = {'red': 0, 'green': 1, 'blue': 2}
+    NUMBER_OF_SLIDERS = len(SLIDERS)
     SLIDER_MIN = 0
     SLIDER_MAX = 100
 
@@ -53,7 +52,7 @@ class GuiApp(ABC):
 
         # Set the lights to the 'off' color
         for color in self.LIGHTS:
-            self.waf_lights[self.LIGHTS[color]].color = self.DARK_COLOR
+            self.waf_lights[self.LIGHTS[color]].color = self.DARK_LIGHT_COLOR
 
         # Build and populate a box for the push buttons
         box_pbs = guizero.Box(self.app, border=1, align='left',
@@ -78,8 +77,8 @@ class GuiApp(ABC):
             guizero.Text(box_sliders, text='S\nl\ni\nd\ne\nr\n\n' + str(i + 1),
                          width=2, align='left')
 
-        for i in range(self.NUMBER_OF_SLIDERS):
-            self.sld_list[i].text_color = self.SLIDER_COLORS[i]
+        for i, slider_color in enumerate(self.SLIDERS.keys()):
+            self.sld_list[i].text_color = slider_color
 
         # Build and populate a box for misc widgets
         box_misc = guizero.Box(self.app, border=1, align='left',
@@ -140,7 +139,7 @@ class GuiApp(ABC):
             if state == 'on':
                 self.waf_lights[self.LIGHTS[light]].color = light
             elif state == 'off':
-                self.waf_lights[self.LIGHTS[light]].color = self.DARK_COLOR
+                self.waf_lights[self.LIGHTS[light]].color = self.DARK_LIGHT_COLOR
             else:
                 guizero.error(title='Simulator Error',
                               text='Invalid State-' + state)
@@ -172,6 +171,16 @@ class GuiApp(ABC):
         if slider in self.SLIDERS:
             slider_value = self.sld_list[self.SLIDERS[slider]].value
             return slider_value
+        else:
+            guizero.error(title='Simulator Error', text='Invalid Slider-' + slider)
+
+    def set_slider_value(self, slider, slider_value):
+        if slider in self.SLIDERS:
+            if self.SLIDER_MIN <= slider_value <= self.SLIDER_MAX:
+                self.sld_list[self.SLIDERS[slider]].value = slider_value
+            else:
+                guizero.error(title='Simulator Error', text='Invalid Slider Value: ' +
+                                                            str(slider_value))
         else:
             guizero.error(title='Simulator Error', text='Invalid Slider-' + slider)
 
