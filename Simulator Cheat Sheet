@@ -19,7 +19,7 @@ self.get_picture_state()  # returns the string "sun" or "moon"
 
 The names of the lights are "red", "yellow", "green", "blue"
 self.get_light_state(light)  # returns the string "on" or "off"
-self.set_light_state(light, state)  # state is set to "on" or "off"
+self.set_light_state(light, state)  # set the light state to "on" or "off"
 
 self.pb_clicked(number)  # "number" will be set to the number of the button clicked
 
