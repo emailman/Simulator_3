@@ -37,6 +37,8 @@ Exercise 7b: Use the red slider to represent temperature (0-100).
 
 Exercise 7c: Use the three sliders as mixers to set the color of the circle
 
+Exercise 7d: Vary the setting of the green slider between 40 and 60 in 1 degree increments
+
 Exercise 8a: Prompt for the radius of a circle, press any button when ready,
                 then calculate and show the area in the message field
 
