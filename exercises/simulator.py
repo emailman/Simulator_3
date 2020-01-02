@@ -183,8 +183,12 @@ class GuiApp(ABC):
 
     def set_slider_value(self, slider, slider_value):
         if slider in self.SLIDERS:
-            if self.SLIDER_MIN <= slider_value <= self.SLIDER_MAX:
-                self.sld_list[self.SLIDERS[slider]].value = slider_value
+            if isinstance(slider_value, int) or isinstance(slider_value, float):
+                if self.SLIDER_MIN <= slider_value <= self.SLIDER_MAX:
+                    self.sld_list[self.SLIDERS[slider]].value = slider_value
+                else:
+                    guizero.error(title='Simulator Error', text='Invalid Slider Value: ' +
+                                                                str(slider_value))
             else:
                 guizero.error(title='Simulator Error', text='Invalid Slider Value: ' +
                                                             str(slider_value))
