@@ -10,9 +10,12 @@ loop(self)  # Code that runs repeatedly (every second)
 You may use these functions in your exercises:
 self.change_title(new_title, new_color)  # new_color is optional, default is black
 self.change_message(new_message, new color)  # new color is optional
-self.change_prompt(new_prompt, new color)  # new color is optional
 
-self.get_text_entry():  # returns the text entered in the text box
+self.change_prompt_1(new_prompt, new color)  # new color is optional
+self.get_text_entry_1():  # returns the text entered in the text box
+
+self.change_prompt_2(new_prompt, new color)  # new color is optional
+self.get_text_entry_2():  # returns the text entered in the text box
 
 self.change_picture_state()  # flip the picture between "sun" and "moon"
 self.get_picture_state()  # returns the string "sun" or "moon"

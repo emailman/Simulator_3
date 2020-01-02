@@ -5,7 +5,7 @@ Exercise 0: A program you can copy to get started
 
 Exercise 1a: Change the title to "Hello World" and and the message to your name
 
-Exercise 1b: Enter you name in the text box, then push any button.  When a
+Exercise 1b: Enter you name in the text box 1, then push any button.  When a
                 button is pushed, change the message to "Welcome " and your name
 
 Exercise 2a: Flip the picture from "sun" to "moon" every second
@@ -24,7 +24,7 @@ Exercise 5a: Change the message to say which button was pressed
 
 Exercise 5b: Light the corresponding light when a button is pressed
 
-Exercise 5c: Alternative turn on and off each light when the respective button is pressed
+Exercise 5c: Alternately turn on and off each light when the respective button is pressed
 
 Exercise 6: Turn on the yellow light if the picture is the "sun"
                 Turn on the blue light if the picture is the "moon"

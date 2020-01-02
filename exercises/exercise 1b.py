@@ -12,7 +12,7 @@ class MyUserApp(GuiApp):
         pass
 
     def pb_clicked(self, number):
-        your_name = self.get_text_entry()
+        your_name = self.get_text_entry_1()
         self.change_message('Welcome ' + your_name)
 
 

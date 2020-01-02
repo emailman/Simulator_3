@@ -90,11 +90,15 @@ class GuiApp(ABC):
         self.pb_picture = guizero.PushButton(box_misc, image='./pictures/sun.png',
                                              height=90, width=90,
                                              command=self.change_picture_state)
-        guizero.Box(box_misc, height=75, width=75)
+        guizero.Box(box_misc, height=50, width=75)
 
-        self.txt_prompt = guizero.Text(box_misc, text='Type here:')
-        self.tbx_entry = guizero.TextBox(box_misc, width=16)
-        guizero.Box(box_misc, height=75, width=75)
+        self.txt_prompt_1 = guizero.Text(box_misc, text='Prompt 1:')
+        self.tbx_entry_1 = guizero.TextBox(box_misc, width=16)
+        guizero.Box(box_misc, height=30, width=75)
+
+        self.txt_prompt_2 = guizero.Text(box_misc, text='Prompt 2:')
+        self.tbx_entry_2 = guizero.TextBox(box_misc, width=16)
+        guizero.Box(box_misc, height=30, width=75)
 
         guizero.PushButton(box_misc, text='QUIT', command=quit)
 
@@ -119,9 +123,9 @@ class GuiApp(ABC):
         self.txt_message.value = new_message
         self.txt_message.text_color = color
 
-    def change_prompt(self, new_prompt, color='black'):
-        self.txt_prompt.value = new_prompt
-        self.txt_prompt.text_color = color
+    def change_prompt_1(self, new_prompt, color='black'):
+        self.txt_prompt_1.value = new_prompt
+        self.txt_prompt_1.text_color = color
 
     def change_picture_state(self):
         if self.picture_state == 'sun':
@@ -158,8 +162,11 @@ class GuiApp(ABC):
             guizero.error(title='Simulator Error', text='Invalid Light-' + light)
             return None
 
-    def get_text_entry(self):
-        return self.tbx_entry.value
+    def get_text_entry_1(self):
+        return self.tbx_entry_1.value
+
+    def get_text_entry_2(self):
+        return self.tbx_entry_2.value
 
     def get_slider_values(self):
         slider_values = []
