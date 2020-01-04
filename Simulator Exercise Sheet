@@ -24,7 +24,8 @@ Exercise 5a: Change the message to say which button was pressed
 
 Exercise 5b: Light the corresponding light when a button is pressed
 
-Exercise 5c: Alternately turn on and off each light when the respective button is pressed
+Exercise 5c: Alternately turn on and off each light when the respective button
+                is pressed
 
 Exercise 6: Turn on the yellow light if the picture is the "sun"
                 Turn on the blue light if the picture is the "moon"
@@ -37,7 +38,8 @@ Exercise 7b: Use the red slider to represent temperature (0-100).
 
 Exercise 7c: Use the three sliders as mixers to set the color of the circle
 
-Exercise 7d: Vary the value of the green slider between 40 and 60 in 1 degree increments
+Exercise 7d: Vary the value of the green slider between 40 and 60 in
+                1 degree increments
 
 Exercise 8a: Prompt for the radius of a circle, press any button when ready,
                 then calculate and show the area in the message field

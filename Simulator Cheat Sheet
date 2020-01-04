@@ -31,5 +31,5 @@ self.get_slider_value(slider)  # returns the current value of the slider
 self.get_slider_values()  # returns a list of the current values of all the sliders
 self.set_slider_value(slider, value)  # set the value of the slider (0-100)
 
-self.set_circle_color(red, green, blue):  # set circle to RGB value (0-255)
+self.set_circle_color(red, green, blue):  # set circle to an RGB value (0-255)
 self.get_circle_color(): returns the color of the circle in a list of RGB values
