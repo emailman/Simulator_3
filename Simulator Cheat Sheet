@@ -1,4 +1,3 @@
-
 Simulator Cheat Sheet
 
 You must provide these functions in your exercises:
@@ -7,7 +6,13 @@ once(self)  # Code that runs once when the program starts
 loop(self)  # Code that runs repeatedly (every second)
 
 
-You may use these functions in your exercises:
+You may use this function in your exercises to handle push button
+click events:
+pb_clicked(self, number)  # "number" will be set to the number
+    of the button clicked (1 - 4)
+
+
+You may use these functions in your once, loop, or pb_clicked functions :
 self.change_title(new_title, new_color)  # new_color is optional, default is black
 self.change_message(new_message, new color)  # new color is optional
 
@@ -23,8 +28,6 @@ self.get_picture_state()  # returns the string "sun" or "moon"
 The names of the lights are "red", "yellow", "green", "blue"
 self.get_light_state(light)  # returns the string "on" or "off"
 self.set_light_state(light, state)  # set the light state to "on" or "off"
-
-self.pb_clicked(number)  # "number" will be set to the number of the button clicked
 
 The names of the sliders are "red", "green", "blue"
 self.get_slider_value(slider)  # returns the current value of the slider
