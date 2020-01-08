@@ -6,7 +6,7 @@ once(self)  # Code that runs once when the program starts
 loop(self)  # Code that runs repeatedly (every second)
 
 
-You may use this function in your exercises to handle push button
+You may provide this function in your exercises to handle push button
 click events:
 pb_clicked(self, number)  # "number" will be set to the number
     of the button clicked (1 - 4)
