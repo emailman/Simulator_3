@@ -1,7 +1,8 @@
+Python 3 and GUI Containers
 
-Python 3 Software Containers
+Software Containers:
 
-The first line of all containers ends with ":".
+The first line of all software containers ends with ":".
 Indentation is used to show the contents of a container.
 
 Class-
@@ -31,4 +32,17 @@ holds: local variables, executable code, nested tests and loops
 Iterative loop:
 keywords: for .. in ..
 holds: local variables, executable code, nested tests and loops
+
+
+Data Containers:
+list []  mutable and extensible
+tuple () immutable
+dictionary {key : value}  key must be unique
+set {key}  key must be unique
+
+
+GUI Containers:
+App  # Top level, parent or root container
+Window  # Lower level, child container
+Box  # Container in an app or window container
 
