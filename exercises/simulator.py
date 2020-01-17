@@ -127,6 +127,10 @@ class GuiApp(ABC):
         self.txt_prompt_1.value = new_prompt
         self.txt_prompt_1.text_color = color
 
+    def change_prompt_2(self, new_prompt, color='black'):
+        self.txt_prompt_2.value = new_prompt
+        self.txt_prompt_2.text_color = color
+
     def change_picture_state(self):
         if self.picture_state == 'sun':
             self.pb_picture.image = './pictures/moon.png'
