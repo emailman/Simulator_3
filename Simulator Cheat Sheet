@@ -12,7 +12,7 @@ pb_clicked(self, number)  # "number" will be set to the number
     of the button clicked (1 - 4)
 
 
-You may use these functions in your once, loop, or pb_clicked functions :
+You may use these functions in your once, loop, or pb_clicked functions:
 self.change_title(new_title, new_color)  # new_color is optional, default is black
 self.change_message(new_message, new color)  # new color is optional
 
