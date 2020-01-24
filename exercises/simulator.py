@@ -87,7 +87,7 @@ class GuiApp(ABC):
         self.circle = guizero.Waffle(box_misc, height=1, width=1, dim=100,
                                      dotty=True, color='black', pad=50)
 
-        self.pb_picture = guizero.PushButton(box_misc, image='./pictures/sun.png',
+        self.pb_picture = guizero.PushButton(box_misc, image='./pictures/sun.gif',
                                              height=90, width=90,
                                              command=self.change_picture_state)
         guizero.Box(box_misc, height=50, width=75)
@@ -133,10 +133,10 @@ class GuiApp(ABC):
 
     def change_picture_state(self):
         if self.picture_state == 'sun':
-            self.pb_picture.image = './pictures/moon.png'
+            self.pb_picture.image = './pictures/moon.gif'
             self.picture_state = 'moon'
         else:
-            self.pb_picture.image = './pictures/sun.png'
+            self.pb_picture.image = './pictures/sun.gif'
             self.picture_state = 'sun'
 
     def get_picture_state(self):
