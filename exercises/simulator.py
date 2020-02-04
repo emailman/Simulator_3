@@ -172,6 +172,14 @@ class GuiApp(ABC):
     def get_text_entry_2(self):
         return self.tbx_entry_2.value
 
+    def clear_text_entry_1(self):
+        self.tbx_entry_1.clear()
+        self.tbx_entry_1.focus()
+
+    def clear_text_entry_2(self):
+        self.tbx_entry_2.clear()
+        self.tbx_entry_2.focus()
+
     def get_slider_values(self):
         slider_values = []
         for slider in self.sld_list:

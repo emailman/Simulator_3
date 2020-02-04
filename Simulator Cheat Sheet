@@ -17,10 +17,12 @@ self.change_title(new_title, new_color)  # new_color is optional, default is bla
 self.change_message(new_message, new color)  # new color is optional
 
 self.change_prompt_1(new_prompt, new color)  # new color is optional
-self.get_text_entry_1():  # returns the text entered in the text box
+self.get_text_entry_1():  # returns the text entered in the text box 1
+self.clear_text_entry_1():  # clear text box 1
 
 self.change_prompt_2(new_prompt, new color)  # new color is optional
-self.get_text_entry_2():  # returns the text entered in the text box
+self.get_text_entry_2():  # returns the text entered in the text box 2
+self.clear_text_entry_2():  # clear text box 2
 
 self.change_picture_state()  # flip the picture between "sun" and "moon"
 self.get_picture_state()  # returns the string "sun" or "moon"
