@@ -37,7 +37,7 @@ holds: local variables, executable code, nested tests and loops
 Data Containers:
 list []  mutable and extensible
 tuple () immutable
-dictionary {key : value}  key must be unique
+dictionary {key: value}  key must be unique
 set {key}  key must be unique
 
 
